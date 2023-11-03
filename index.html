@@ -1,0 +1,78 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Links -->
+<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Smythe&display=swap" rel="stylesheet">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                    <h1>Auto<span id="naming-dash">- </span><span id="naming-second-name">Motorz</span></h1>
+                    <h3>The best auto parts shop in town</h3>
+                    <img class="header-img" id="header-img" src="https://images.unsplash.com/photo-1602267774924-38124c047174?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUyfHxtb3RvcnxlbnwwfDB8MHx8fDA%3D&w=600">
+            </header>
+            <main>
+                    <div class="menu" id="menu">
+                    <!-- menu list here -->
+                    </div>
+                  <!-- checkout modal here -->
+                    <div class="checkout" id="checkout">
+                            <div class="checkout-title" id="checkout-title">
+                                <p>Your order</p>
+                            </div>
+                            <div class="checkout-resume" id="checkout-resume">
+                                <!-- add items here -->
+                            </div>
+                            <div class="checkout-divider" id="checkout-divider">
+                            </div>
+                            <div class="checkout-price-total" id="checkout-price-total">
+                                <!-- add sum here -->
+                            </div>
+                            <button class="purchase-btn" id="purchase-btn" data-order="purchase-btn">
+                                Complete order
+                            </button>
+                    </div>
+            </main>
+            <footer>
+                    <p>2023 Powered by Ruben Bliz Barradas</p>
+            </footer>
+        </div>
+        <!-- payment-modal below -->
+     <div class="modal-payment" id="modal-payment">
+            <div class="modal-payment-container" id="modal-payment-container">
+                <p class="modal-title" id="modal-title">
+                    Enter card details
+                </p>
+                        <form class="payment-form" id="payment-form">
+                            <input 
+                            id="input-name" 
+                            name="name" type="text"   
+                            placeholder="Enter your name"   
+                            required/>
+                            <input type="number" placeholder="Enter card number" required/>
+                            <input 
+                            type="number" 
+                            onKeyPress="if(this.value.length==3) return false;" 
+                            placeholder="Enter CVV"         
+                            required/>
+
+                <button type="submit" class="pay-btn" id="pay-btn">
+                    Pay
+                </button>
+
+                        </form>
+            </div>
+ 
+        </div>
+        <!-- Order completed message here -->
+
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
